@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCodeFirst", "EFCodeFirst\EFCodeFirst.csproj", "{55B86FB3-5DE9-4521-B874-DE40CB5128A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCodeFirst.Tests", "EFCodeFirst.Tests\EFCodeFirst.Tests.csproj", "{9B03BCE4-6F81-4244-9A8D-D2F379ECEE79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55B86FB3-5DE9-4521-B874-DE40CB5128A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B86FB3-5DE9-4521-B874-DE40CB5128A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B86FB3-5DE9-4521-B874-DE40CB5128A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B86FB3-5DE9-4521-B874-DE40CB5128A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B03BCE4-6F81-4244-9A8D-D2F379ECEE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B03BCE4-6F81-4244-9A8D-D2F379ECEE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B03BCE4-6F81-4244-9A8D-D2F379ECEE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B03BCE4-6F81-4244-9A8D-D2F379ECEE79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

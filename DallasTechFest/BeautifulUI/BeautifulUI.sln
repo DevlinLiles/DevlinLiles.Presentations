@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautifulUI", "BeautifulUI\BeautifulUI.csproj", "{D6AEB40D-6FE3-4189-82CB-CD0B6461F8CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautifulUI.Tests", "BeautifulUI.Tests\BeautifulUI.Tests.csproj", "{5505AEE0-DF81-4AE4-BDA8-C629BE04F501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{4C06B8D1-BEE8-4011-9309-EE0CDDE6434D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{020D1390-63AF-4F3E-AF8F-DCCBFEE9B7DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Tests", "Infrastructure.Tests\Infrastructure.Tests.csproj", "{9EB264CD-3CF0-4DA9-AE98-9A4DED744050}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0E3955D5-A016-437B-9119-1895165CEF2F}"
+	ProjectSection(SolutionItems) = preProject
+		BeautifulUI.vsmdi = BeautifulUI.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = BeautifulUI.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6AEB40D-6FE3-4189-82CB-CD0B6461F8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6AEB40D-6FE3-4189-82CB-CD0B6461F8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6AEB40D-6FE3-4189-82CB-CD0B6461F8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6AEB40D-6FE3-4189-82CB-CD0B6461F8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5505AEE0-DF81-4AE4-BDA8-C629BE04F501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5505AEE0-DF81-4AE4-BDA8-C629BE04F501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5505AEE0-DF81-4AE4-BDA8-C629BE04F501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5505AEE0-DF81-4AE4-BDA8-C629BE04F501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C06B8D1-BEE8-4011-9309-EE0CDDE6434D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C06B8D1-BEE8-4011-9309-EE0CDDE6434D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C06B8D1-BEE8-4011-9309-EE0CDDE6434D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C06B8D1-BEE8-4011-9309-EE0CDDE6434D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{020D1390-63AF-4F3E-AF8F-DCCBFEE9B7DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020D1390-63AF-4F3E-AF8F-DCCBFEE9B7DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020D1390-63AF-4F3E-AF8F-DCCBFEE9B7DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020D1390-63AF-4F3E-AF8F-DCCBFEE9B7DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EB264CD-3CF0-4DA9-AE98-9A4DED744050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EB264CD-3CF0-4DA9-AE98-9A4DED744050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EB264CD-3CF0-4DA9-AE98-9A4DED744050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EB264CD-3CF0-4DA9-AE98-9A4DED744050}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationTests", "PresentationTests\PresentationTests.csproj", "{1DB41EBF-4C9E-4FC3-9426-8E977EF01A5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EA73CE6F-D7BD-4EF9-A78B-7A71024AB124}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		PresentationTests.vsmdi = PresentationTests.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PresentationTests.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DB41EBF-4C9E-4FC3-9426-8E977EF01A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB41EBF-4C9E-4FC3-9426-8E977EF01A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB41EBF-4C9E-4FC3-9426-8E977EF01A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB41EBF-4C9E-4FC3-9426-8E977EF01A5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,164 @@
+﻿@model IEnumerable<Core.Domain.Entities.Product>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            ProductNumber
+        </th>
+        <th>
+            MakeFlag
+        </th>
+        <th>
+            FinishedGoodsFlag
+        </th>
+        <th>
+            Color
+        </th>
+        <th>
+            SafetyStockLevel
+        </th>
+        <th>
+            ReorderPoint
+        </th>
+        <th>
+            StandardCost
+        </th>
+        <th>
+            ListPrice
+        </th>
+        <th>
+            Size
+        </th>
+        <th>
+            SizeUnitMeasureCode
+        </th>
+        <th>
+            WeightUnitMeasureCode
+        </th>
+        <th>
+            Weight
+        </th>
+        <th>
+            DaysToManufacture
+        </th>
+        <th>
+            ProductLine
+        </th>
+        <th>
+            Class
+        </th>
+        <th>
+            Style
+        </th>
+        <th>
+            ProductSubcategoryID
+        </th>
+        <th>
+            ProductModelID
+        </th>
+        <th>
+            SellStartDate
+        </th>
+        <th>
+            SellEndDate
+        </th>
+        <th>
+            DiscontinuedDate
+        </th>
+        <th>
+            rowguid
+        </th>
+        <th>
+            ModifiedDate
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MakeFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinishedGoodsFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SafetyStockLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReorderPoint)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StandardCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ListPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SizeUnitMeasureCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WeightUnitMeasureCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DaysToManufacture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductLine)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Class)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Style)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductSubcategoryID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductModelID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SellStartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SellEndDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiscontinuedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rowguid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedDate)
+        </td>
+       
+    </tr>
+}
+
+</table>
