@@ -1,20 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
-using UI.Entities;
+using Core.Entities;
+using Core.Interfaces;
+using Core.Queries;
 
 namespace UI.Controllers
 {
     public class ProductController : Controller
     {
+        private IRepository _context;
+
+        public ProductController()
+        {
+        }
         //
         // GET: /Product/
 
         public ActionResult Index()
         {
-            var products = new AdventureWorksContext().Products;
+            var products = _context.Find<Product>();
 
             return View(products.ToList());
         }
@@ -24,7 +28,7 @@ namespace UI.Controllers
 
         public ActionResult Details(int id)
         {
-            var product = new AdventureWorksContext().Products.Where(x => x.ProductID == id).Single();
+            var product = _context.Find<Product>().GetById(id);
             return View(product);
         }
 
@@ -59,8 +63,8 @@ namespace UI.Controllers
  
         public ActionResult Edit(int id)
         {
-            var context = new AdventureWorksContext();
-            var item = context.Products.Where(x => x.ProductID == id).Single();
+            var context = _context;
+            var item = context.Find<Product>().Where(x => x.ProductID == id).Single();
 
             return View(item);
         }
@@ -88,8 +92,8 @@ namespace UI.Controllers
  
         public ActionResult Delete(int id)
         {
-            var context = new AdventureWorksContext();
-            var item = context.Products.Where(x => x.ProductID == id).Single();
+            var context = _context;
+            var item = context.Find<Product>().Where(x => x.ProductID == id).Single();
             return View(item);
         }
 
@@ -101,9 +105,9 @@ namespace UI.Controllers
         {
             try
             {
-                var context = new AdventureWorksContext();
-                var item = context.Products.Where(x => x.ProductID == id).Single();
-                context.Products.Remove(item);
+                var context = _context;
+                var item = context.Find<Product>().Where(x => x.ProductID == id).Single();
+                context.Remove(item);
                 return RedirectToAction("Index");
             }
             catch

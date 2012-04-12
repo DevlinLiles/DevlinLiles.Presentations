@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [gstkUser]
+    WITH PASSWORD = N'pGaqtZJoE+eDiVlxyrxuep|{msFT7_&#$!~<=xy<y~oKvl&p', SID = 0x03570DBECF1D8F48A3CC4AE7B8B4C8BE, DEFAULT_DATABASE = [master], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

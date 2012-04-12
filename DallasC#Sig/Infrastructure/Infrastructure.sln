@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{22A89258-6808-4086-82B0-D6D84029FE85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{EDAF2537-4131-45F2-B743-BC978700F258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{D0ECE77B-25A3-4280-A0A2-8A81DED13949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Tests", "UI.Tests\UI.Tests.csproj", "{546D0ECE-12FC-4653-A3B2-CD604CEB71CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests", "Domain.Tests\Domain.Tests.csproj", "{4A179D0C-39E4-4EBF-AEE8-079E844C7877}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02309B3F-8A3E-471D-A54E-B3467619AF12}"
+	ProjectSection(SolutionItems) = preProject
+		Infrastructure.vsmdi = Infrastructure.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Tests", "Infrastructure.Tests\Infrastructure.Tests.csproj", "{87C1B240-F95C-4B1B-B258-C56D6BC9903E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Infrastructure.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22A89258-6808-4086-82B0-D6D84029FE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A89258-6808-4086-82B0-D6D84029FE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A89258-6808-4086-82B0-D6D84029FE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A89258-6808-4086-82B0-D6D84029FE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAF2537-4131-45F2-B743-BC978700F258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAF2537-4131-45F2-B743-BC978700F258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAF2537-4131-45F2-B743-BC978700F258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAF2537-4131-45F2-B743-BC978700F258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0ECE77B-25A3-4280-A0A2-8A81DED13949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0ECE77B-25A3-4280-A0A2-8A81DED13949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0ECE77B-25A3-4280-A0A2-8A81DED13949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0ECE77B-25A3-4280-A0A2-8A81DED13949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{546D0ECE-12FC-4653-A3B2-CD604CEB71CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{546D0ECE-12FC-4653-A3B2-CD604CEB71CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{546D0ECE-12FC-4653-A3B2-CD604CEB71CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{546D0ECE-12FC-4653-A3B2-CD604CEB71CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A179D0C-39E4-4EBF-AEE8-079E844C7877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A179D0C-39E4-4EBF-AEE8-079E844C7877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A179D0C-39E4-4EBF-AEE8-079E844C7877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A179D0C-39E4-4EBF-AEE8-079E844C7877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C1B240-F95C-4B1B-B258-C56D6BC9903E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C1B240-F95C-4B1B-B258-C56D6BC9903E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C1B240-F95C-4B1B-B258-C56D6BC9903E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C1B240-F95C-4B1B-B258-C56D6BC9903E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

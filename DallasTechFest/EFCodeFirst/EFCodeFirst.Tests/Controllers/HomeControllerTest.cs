@@ -6,36 +6,34 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EFCodeFirst;
 using EFCodeFirst.Controllers;
+using System.Data.Entity;
+using EFCodeFirst.Repository;
+using EFCodeFirst.Tests.Properties;
+using EFCodeFirst.Domain;
 
 namespace EFCodeFirst.Tests.Controllers
 {
+    public class BlueProductQuery : Type
+    {
+        public BlueProductQuery()
+        {
+            
+        }
+    }
     [TestClass]
     public class HomeControllerTest
     {
-        [TestMethod]
-        public void Index()
-        {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.Index() as ViewResult;
-
-            // Assert
-            Assert.AreEqual("Welcome to ASP.NET MVC!", result.ViewBag.Message);
-        }
 
         [TestMethod]
-        public void About()
+        public void ShouldConnectionToTheDatabase()
         {
-            // Arrange
-            HomeController controller = new HomeController();
+            var context = new AdventureWorksContext(Settings.Default.Connection);
 
-            // Act
-            ViewResult result = controller.About() as ViewResult;
+            IQueryable<Product> set = context.Set(new BlueProductQuery());
 
-            // Assert
-            Assert.IsNotNull(result);
+            set.Where(x => x.Category == new ProductCategory());
+
+            set.
         }
     }
 }

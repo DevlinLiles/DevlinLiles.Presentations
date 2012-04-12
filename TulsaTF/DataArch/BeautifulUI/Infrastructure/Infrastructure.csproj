@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A156A72-5928-48ED-A397-694FA58A8377}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infrastructure</RootNamespace>
+    <AssemblyName>Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Implementations\Repository.cs" />
+    <Compile Include="Mapping\AddressMap.cs" />
+    <Compile Include="Mapping\AddressTypeMap.cs" />
+    <Compile Include="Mapping\AWBuildVersionMap.cs" />
+    <Compile Include="Mapping\BillOfMaterialMap.cs" />
+    <Compile Include="Mapping\ContactCreditCardMap.cs" />
+    <Compile Include="Mapping\ContactMap.cs" />
+    <Compile Include="Mapping\ContactTypeMap.cs" />
+    <Compile Include="Mapping\CountryRegionCurrencyMap.cs" />
+    <Compile Include="Mapping\CountryRegionMap.cs" />
+    <Compile Include="Mapping\CreditCardMap.cs" />
+    <Compile Include="Mapping\CultureMap.cs" />
+    <Compile Include="Mapping\CurrencyMap.cs" />
+    <Compile Include="Mapping\CurrencyRateMap.cs" />
+    <Compile Include="Mapping\CustomerAddressMap.cs" />
+    <Compile Include="Mapping\CustomerMap.cs" />
+    <Compile Include="Mapping\DatabaseLogMap.cs" />
+    <Compile Include="Mapping\DepartmentMap.cs" />
+    <Compile Include="Mapping\DocumentMap.cs" />
+    <Compile Include="Mapping\EmployeeAddressMap.cs" />
+    <Compile Include="Mapping\EmployeeDepartmentHistoryMap.cs" />
+    <Compile Include="Mapping\EmployeeMap.cs" />
+    <Compile Include="Mapping\EmployeePayHistoryMap.cs" />
+    <Compile Include="Mapping\ErrorLogMap.cs" />
+    <Compile Include="Mapping\IllustrationMap.cs" />
+    <Compile Include="Mapping\IndividualMap.cs" />
+    <Compile Include="Mapping\JobCandidateMap.cs" />
+    <Compile Include="Mapping\LocationMap.cs" />
+    <Compile Include="Mapping\ProductCategoryMap.cs" />
+    <Compile Include="Mapping\ProductCostHistoryMap.cs" />
+    <Compile Include="Mapping\ProductDescriptionMap.cs" />
+    <Compile Include="Mapping\ProductDocumentMap.cs" />
+    <Compile Include="Mapping\ProductInventoryMap.cs" />
+    <Compile Include="Mapping\ProductListPriceHistoryMap.cs" />
+    <Compile Include="Mapping\ProductMap.cs" />
+    <Compile Include="Mapping\ProductModelIllustrationMap.cs" />
+    <Compile Include="Mapping\ProductModelMap.cs" />
+    <Compile Include="Mapping\ProductModelProductDescriptionCultureMap.cs" />
+    <Compile Include="Mapping\ProductPhotoMap.cs" />
+    <Compile Include="Mapping\ProductProductPhotoMap.cs" />
+    <Compile Include="Mapping\ProductReviewMap.cs" />
+    <Compile Include="Mapping\ProductSubcategoryMap.cs" />
+    <Compile Include="Mapping\ProductVendorMap.cs" />
+    <Compile Include="Mapping\PurchaseOrderDetailMap.cs" />
+    <Compile Include="Mapping\PurchaseOrderHeaderMap.cs" />
+    <Compile Include="Mapping\SalesOrderDetailMap.cs" />
+    <Compile Include="Mapping\SalesOrderHeaderMap.cs" />
+    <Compile Include="Mapping\SalesOrderHeaderSalesReasonMap.cs" />
+    <Compile Include="Mapping\SalesPersonMap.cs" />
+    <Compile Include="Mapping\SalesPersonQuotaHistoryMap.cs" />
+    <Compile Include="Mapping\SalesReasonMap.cs" />
+    <Compile Include="Mapping\SalesTaxRateMap.cs" />
+    <Compile Include="Mapping\SalesTerritoryHistoryMap.cs" />
+    <Compile Include="Mapping\SalesTerritoryMap.cs" />
+    <Compile Include="Mapping\ScrapReasonMap.cs" />
+    <Compile Include="Mapping\ShiftMap.cs" />
+    <Compile Include="Mapping\ShipMethodMap.cs" />
+    <Compile Include="Mapping\ShoppingCartItemMap.cs" />
+    <Compile Include="Mapping\SpecialOfferMap.cs" />
+    <Compile Include="Mapping\SpecialOfferProductMap.cs" />
+    <Compile Include="Mapping\StateProvinceMap.cs" />
+    <Compile Include="Mapping\StoreContactMap.cs" />
+    <Compile Include="Mapping\StoreMap.cs" />
+    <Compile Include="Mapping\TransactionHistoryArchiveMap.cs" />
+    <Compile Include="Mapping\TransactionHistoryMap.cs" />
+    <Compile Include="Mapping\UnitMeasureMap.cs" />
+    <Compile Include="Mapping\vAdditionalContactInfoMap.cs" />
+    <Compile Include="Mapping\vEmployeeDepartmentHistoryMap.cs" />
+    <Compile Include="Mapping\vEmployeeDepartmentMap.cs" />
+    <Compile Include="Mapping\vEmployeeMap.cs" />
+    <Compile Include="Mapping\VendorAddressMap.cs" />
+    <Compile Include="Mapping\VendorContactMap.cs" />
+    <Compile Include="Mapping\VendorMap.cs" />
+    <Compile Include="Mapping\vIndividualCustomerMap.cs" />
+    <Compile Include="Mapping\vIndividualDemographicMap.cs" />
+    <Compile Include="Mapping\vJobCandidateEducationMap.cs" />
+    <Compile Include="Mapping\vJobCandidateEmploymentMap.cs" />
+    <Compile Include="Mapping\vJobCandidateMap.cs" />
+    <Compile Include="Mapping\vProductAndDescriptionMap.cs" />
+    <Compile Include="Mapping\vProductModelCatalogDescriptionMap.cs" />
+    <Compile Include="Mapping\vProductModelInstructionMap.cs" />
+    <Compile Include="Mapping\vSalesPersonMap.cs" />
+    <Compile Include="Mapping\vSalesPersonSalesByFiscalYearMap.cs" />
+    <Compile Include="Mapping\vStateProvinceCountryRegionMap.cs" />
+    <Compile Include="Mapping\vStoreWithDemographicMap.cs" />
+    <Compile Include="Mapping\vVendorMap.cs" />
+    <Compile Include="Mapping\WorkOrderMap.cs" />
+    <Compile Include="Mapping\WorkOrderRoutingMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{81C525AD-9BC5-4948-AA50-681C813574AE}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

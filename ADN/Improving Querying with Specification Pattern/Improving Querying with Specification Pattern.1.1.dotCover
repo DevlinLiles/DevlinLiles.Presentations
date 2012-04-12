@@ -1,0 +1,11 @@
+<Configuration>
+  <CoverageFilters>
+    <IncludeFilters>
+      <Filter ModuleMask="*" ClassMask="*" FunctionMask="*" />
+    </IncludeFilters>
+    <ExcludeFilters />
+  </CoverageFilters>
+  <SnapshotDialog>
+    <InitialDirectory>D:\Book\EFCookbook\Chapters\Chapter 6\Code\Completed Code Samples\Improving Querying with Specification Pattern</InitialDirectory>
+  </SnapshotDialog>
+</Configuration>
